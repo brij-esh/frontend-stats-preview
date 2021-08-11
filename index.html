@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      width: auto;
+      height: auto;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(233, 47%, 7%);
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    } */
+
+    .card {
+      position: relative;
+      width: 375px;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      background-color: hsl(244, 38%, 16%);
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .poster {
+      background: #000 url(/images/image-header-mobile.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 275px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: hsla(277, 64%, 61%, 0.37);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    .detail {
+      margin: 30px 0 40px 0;
+      width: 250px;
+      word-wrap: break-word;
+    }
+
+    .detail h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .detail h1 span {
+      color: hsl(277, 64%, 61%);
+    }
+
+    p {
+      font-size: 13px;
+      color: hsla(0, 0%, 100%, 0.75);
+      line-height: 1.6;
+    }
+
+    .like {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .reach {
+      margin: 15px;
+    }
+
+    .reach h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .reach p {
+      font-size: 12px;
+    }
+
+    @media (min-width: 720px) {
+      main {
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+
+      }
+
+      .card {
+        flex-direction: row-reverse;
+        width: 1000px;
+        top: 150px;
+      }
+
+      .content {
+        width: 40%;
+        margin: 40px;
+      }
+
+      .detail {
+        width: 400px;
+        margin: 20px;
+        text-align: left;
+      }
+
+      .like {
+        width: 400px;
+        justify-content: space-between;
+      }
+
+      .poster {
+        background: url(/images/image-header-desktop.jpg);
+        width: 60%;
+        height: 366px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+      }
+
+      .overlay {
+        border-bottom-right-radius: 10px;
+      }
+
+      .like {
+        flex-direction: row;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <main class="attribution">
+    <div class="card">
+      <div class="poster">
+        <div class="overlay"></div>
+      </div>
+      <div class="content">
+        <div class="detail">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.</p>
+        </div>
+        <div class="like">
+          <div class="company reach">
+            <h2>10k+</h2>
+            <p>COMPANIES</p>
+          </div>
+          <div class="template reach">
+            <h2>314</h2>
+            <p>TEMPLATES</p>
+          </div>
+          <div class="queries reach">
+            <h2>12M+</h2>
+            <p>QUERIES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Brijesh Yadav</a>.
+  </main>
+</body>
+
+</html>
